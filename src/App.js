@@ -18,7 +18,7 @@ class App extends Component {
     }
 
     async componentDidMount() {
-        this.setState({ loading: true});
+        this.setState({loading: true});
         const result = await fetchDetail(this.state.queryKeyWords);
         this.setState({propertyOfMovie: result, loading: false});
     }

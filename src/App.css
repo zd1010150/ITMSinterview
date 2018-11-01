@@ -21,7 +21,10 @@
     left: 0px;
     right: 0px;
     background: rgba(255, 255, 255, 1);
-
+    display: none;
+}
+.loading-mask.loading{
+    display: block;
 }
 .icon-wrapper{
     width: 100%;

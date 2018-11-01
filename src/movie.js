@@ -35,7 +35,7 @@ class Movie extends React.Component {
                     <p className="producer">Crew</p>
                     <ul className="producer-list">
                         {
-                            (this.state.isShowMoreCrew ? crew.slice(0, 5) : crew).map(c => <li> {c.job} : {c.name}</li>)
+                            (this.state.isShowMoreCrew ? crew.slice(0, 5) : crew).map(c => <li key={crew.id}> {c.job} : {c.name}</li>)
                         }
                     </ul>
                     {crew.length > 5 ? <button onClick={this.toggleMoreCrew}>click
